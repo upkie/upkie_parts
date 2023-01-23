@@ -1,2 +1,3 @@
-# build_upkie
-Instructions and resources to build Upkie
+# Build Upkie
+
+Instructions and resource files to build Upkie.
