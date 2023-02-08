@@ -11,7 +11,7 @@ Pins are as follows when looking from the cable to the JST connector:
 - Center: ``CAN_L`` (typically green)
 - Right: ``GND`` (typically black)
 
-## Power cables
+## PWR cables
 
 - XT-30 connectors
 - Wire gauge: 14 or 16 AWG
