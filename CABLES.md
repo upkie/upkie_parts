@@ -11,7 +11,7 @@ Pins are as follows when looking from the cable to the JST connector:
 - Center: ``CAN_L`` (typically green)
 - Right: ``GND`` (typically black)
 
-See also: [JST PH-3 CAN](https://github.com/mjbots/power_dist/blob/main/docs/reference.md#jst-ph-3-can) in the power dist reference.
+See also: [JST PH-3 CAN](https://github.com/mjbots/power_dist/blob/main/docs/reference.md#jst-ph-3-can) in the power\_dist reference.
 
 ## PWR cables
 
