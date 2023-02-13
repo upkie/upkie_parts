@@ -2,6 +2,14 @@
 
 Instructions and resource files to build Upkie.
 
+## 3D printing
+
+3D printing project (3MF) files were configured using [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer). They should work with other slicers, but your mileage may vary.
+
+* Print all chassis parts from [3d\_printing/chassis](3d_printing/chassis).
+* Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow).
+    - Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.
+
 ## Assembly
 
 ### Torso
