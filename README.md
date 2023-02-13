@@ -2,7 +2,7 @@
 
 Instructions and resource files to build Upkie.
 
-## 3D printing
+## 1 — 3D printing
 
 3D printing project (3MF) files were configured using [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer). They should work with other slicers, but your mileage may vary.
 
@@ -10,21 +10,21 @@ Instructions and resource files to build Upkie.
 * Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow).
     - Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.
 
-## Assembly
+## 2 — Assembly
 
-### Torso
-
-...
-
-### Left leg
+### 2.1 — Torso
 
 ...
 
-### Right leg
+### 2.2 – Left leg
 
 ...
 
-### Final assembly
+### 2.3 – Right leg
+
+...
+
+### 2.4 – Final assembly
 
 Parts:
 
@@ -42,3 +42,7 @@ Parts:
     - Add a label "JC2" to the CAN cable
 3. Connect the left qdd100 to the power dist board using a PWR cables
 4. Connect the right qdd100 to the power dist board using a PWR cables
+
+## 3 — Enjoy!
+
+...
