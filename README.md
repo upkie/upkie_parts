@@ -1,34 +1,34 @@
 # Build Upkie
 
-Instructions and resource files to build [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot).
+Instructions and resource files to build the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped.
 
-## 1 — 3D printing
+## 1) 3D printing
 
 3D printing project (3MF) files were configured using [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer). They should work with other slicers, but your mileage may vary.
 
-### 1.1 — Torso
+### 1.1) Torso
 
 Print all torso parts from [3d\_printing/torso](3d_printing/torso).
 
-### 1.2 – Legs
+### 1.2) Legs
 
 Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow). (Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.)
 
-## 2 — Assembly
+## 2) Assembly
 
-### 2.1 — Torso
-
-...
-
-### 2.2 – Left leg
+### 2.1) Torso
 
 ...
 
-### 2.3 – Right leg
+### 2.2) Left leg
 
 ...
 
-### 2.4 – Final assembly
+### 2.3) Right leg
+
+...
+
+### 2.4) Final assembly
 
 Parts:
 
@@ -47,6 +47,6 @@ Parts:
 3. Connect the left qdd100 to the power dist board using a PWR cables
 4. Connect the right qdd100 to the power dist board using a PWR cables
 
-## 3 — Enjoy!
+## 3) Enjoy!
 
 ...
