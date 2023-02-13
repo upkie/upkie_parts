@@ -1,6 +1,6 @@
 # Build Upkie
 
-Instructions and resource files to build Upkie.
+Instructions and resource files to build [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot).
 
 ## 1 — 3D printing
 
