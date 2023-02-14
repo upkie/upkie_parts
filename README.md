@@ -59,20 +59,20 @@ Pay extra care to the last point. If the head is mounted the opposite way, you w
 
 Parts:
 
-| Item        | Number |
+| Item        | Quantity |
 |-------------|--------|
 | Torso       | 1 |
 | Left leg    | 1 |
 | Right leg   | 1 |
 | Comms cable, 20 cm | 2 |
-| Power cable, male-female connectors, 20 cm | 2 |
+| Hip power cable | 2 |
 
 1. Connect the **right**-hip qdd100 CAN to the pi3hat **JC1** CAN using a comms cable
     - Add a label "JC1" to the comms cable
 2. Connect the **left**-hip qdd100 CAN to the pi3hat **JC2** CAN using a comms cable
     - Add a label "JC2" to the comms cable
-3. Connect the left qdd100 to the power dist board using a power cable
-4. Connect the right qdd100 to the power dist board using a power cable
+3. Connect the left qdd100 to the power dist board using a hip power cable
+4. Connect the right qdd100 to the power dist board using a hip power cable
 
 ## 4) Raspberry Pi OS
 
