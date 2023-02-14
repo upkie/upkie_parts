@@ -1,6 +1,6 @@
 # Bill of materials
 
-* UPE: Unit Price Estimate
+* UPE: Unit Price Estimate (retrieved: February 2023)
 
 | Part                   | Requirements | Quantity | UPE (USD) | Suppliers |
 |------------------------|--------------|----------|-----------|-----------|
