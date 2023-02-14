@@ -6,13 +6,12 @@
 
 | Short name         | Part name                  | Requirements  | Quantity | UPE (USD) | Suppliers |
 |--------------------|----------------------------|---------------|----------|-----------|-----------|
-| hip power cable    | male-female power cable    | length: 20 cm | 2        | 2         | |
 | leg power cable    | female-female power cable  | length: 40 cm | 4        |           | |
 | pi3hat             | mjbots pi3hat              | r4.4b+        | 1        | 150       | [mjbots](https://mjbots.com/products/mjbots-pi3hat-r4-4b) |
-| pi3hat power cable | male-female power cable    | length: 30 cm | 1        | 2         | |
 | power dist         | mjbots power dist          | r4.3b+        | 1        | 140       | [mjbots](https://mjbots.com/products/mjbots-power-dist-r4-3b) |
 | qdd100             | mjbots qdd100 servo        | beta 2+       | 4        | 540       | [mjbots](https://mjbots.com/products/qdd100-beta-3) |
 | raspi              | Raspberry Pi 4 Model B     | 8 GB RAM      | 1        | 100       | see [raspberrypi.com](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/#find-reseller) |
+| torso power cable | male-female power cable     | length: 30 cm | 3        | 2         | |
 | wheel actuator     | moteus developer kit       | r4.11+        | 2        | 230       | [mjbots](https://mjbots.com/products/moteus-r4-11-developer-kit) |
 
 Summing up unit price estimates multiplied by part quantities, the total price estimate for this BOM is waitforcompletebom USD.
