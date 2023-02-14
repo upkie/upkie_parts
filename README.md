@@ -24,7 +24,28 @@ Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow). (O
 
 ### 2.1) Torso
 
-...
+### 2.1.1) Head plate
+
+- Mount the Raspberry Pi to the plate using the four M2 hex spacers. USB ports should be on the side of the “USB” printed text.
+- Mount the pi3hat on top of the Pi using the four M2 screws that come with it.
+- Mount the head to the left and right plates so that the USB side is to the robot's right (eyes are front, battery is back).
+
+Pay extra care to the last point. If the head is mounted the opposite way, you will have (1) a hard time plugging in XT-30 power cables and (2) to update the IMU frame orientation in the robot's URDF, a.k.a., more trouble than necessary ;-)
+
+- Optionally, 3D print the [handle](3d_printing/extras/handle_v1.3mf) and screw it to the head plate using four M3x8 screws (this can always be done at any later stage).
+
+### 2.1.2) Buttocks plate
+
+- Screw the power dist board to the buttocks plate using four M2 screws
+
+### 2.1.3) Complete the torso
+
+- Screw the left and right plates to the buttocks plate using M3x8 screws
+- Screw the front plate to the left and right plates using M3x8 screws
+- Screw the two stiffeners to the front plate using M3x8 screws
+- (Leave out the internal covers for now)
+- Screw the two internal covers using the ten M2.5 screws
+- Plug the battery to the connector, it should make a satisfying click
 
 ### 2.2) Left leg
 
