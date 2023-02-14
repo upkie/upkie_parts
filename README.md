@@ -8,9 +8,9 @@ Order parts listed in the [bill of materials](BOM.md). It is better to do this f
 
 ## 2) 3D printing
 
-Parts are printed in PETG with a 0.2 mm layer height. 3D printing project (3MF) files include all configuration details (speed, infill, layer height, ...) used to print them with a [Prusa i3 MK3S+](https://www.prusa3d.com/product/original-prusa-i3-mk3s-kit-3/). Printing should work out with other printers too.
+3D printing project (3MF) files are provided for each part. They include all configuration details (speed, infill, layer height, etc.) required for printing. All parts were printed multiple times with a [Prusa i3 MK3S+](https://www.prusa3d.com/product/original-prusa-i3-mk3s-kit-3/).
 
-Infill varies from 15% to 30%, but most of these values are guesstimates that don't come from observing parts breaking after robot falls. The only exception to this is the wheel hub, where there is an explicit infill modifier on the hex coupler connector.
+Parts should be printed in PETG (which has better impact resistance than PLA) with a 0.2 mm layer height. Infill varies from 15% to 30%, but most of these values are guesstimates that don't come from observing parts breaking after robot falls. The only exception to this is the wheel hub, where there is an explicit infill modifier on the hex coupler connector.
 
 ### 2.1) Torso
 
