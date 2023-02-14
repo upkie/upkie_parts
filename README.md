@@ -74,6 +74,22 @@ Parts:
 3. Connect the left qdd100 to the power dist board using a PWR cables
 4. Connect the right qdd100 to the power dist board using a PWR cables
 
-## 3) Enjoy!
+## 3) Raspberry Pi OS
+
+...
+
+## 4) Power the robot up
+
+...
+
+## 5) Install the software
+
+...
+
+## 6) Run a balancing test
+
+...
+
+## 7) Unleash the beast!
 
 ...
