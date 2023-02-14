@@ -12,19 +12,19 @@ Parts are printed in PETG with a 0.2 mm layer height. 3D printing project (3MF) 
 
 Infill varies from 15% to 30%, but most of these values are guesstimates that don't come from observing parts breaking after robot falls. The only exception to this is the wheel hub, where there is an explicit infill modifier on the hex coupler connector.
 
-### 1.1) Torso
+### 2.1) Torso
 
 Print all torso parts from [3d\_printing/torso](3d_printing/torso).
 
-### 1.2) Legs
+### 2.2) Legs
 
 Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow). (Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.)
 
-## 2) Assembly
+## 3) Assembly
 
-### 2.1) Torso
+### 3.1) Torso
 
-### 2.1.1) Head plate
+### 3.1.1) Head plate
 
 - Mount the Raspberry Pi to the plate using the four M2 hex spacers. USB ports should be on the side of the “USB” printed text.
 - Mount the pi3hat on top of the Pi using the four M2 screws that come with it.
@@ -34,11 +34,11 @@ Pay extra care to the last point. If the head is mounted the opposite way, you w
 
 - Optionally, 3D print the [handle](3d_printing/extras/handle_v1.3mf) and screw it to the head plate using four M3x8 screws (this can always be done at any later stage).
 
-### 2.1.2) Buttocks plate
+### 3.1.2) Buttocks plate
 
 - Screw the power dist board to the buttocks plate using four M2 screws
 
-### 2.1.3) Complete the torso
+### 3.1.3) Complete the torso
 
 - Screw the left and right plates to the buttocks plate using M3x8 screws
 - Screw the front plate to the left and right plates using M3x8 screws
@@ -47,15 +47,15 @@ Pay extra care to the last point. If the head is mounted the opposite way, you w
 - Screw the two internal covers using the ten M2.5 screws
 - Plug the battery to the connector, it should make a satisfying click
 
-### 2.2) Left leg
+### 3.2) Left leg
 
 ...
 
-### 2.3) Right leg
+### 3.3) Right leg
 
 ...
 
-### 2.4) Final assembly
+### 3.4) Final assembly
 
 Parts:
 
@@ -74,22 +74,22 @@ Parts:
 3. Connect the left qdd100 to the power dist board using a PWR cables
 4. Connect the right qdd100 to the power dist board using a PWR cables
 
-## 3) Raspberry Pi OS
+## 4) Raspberry Pi OS
 
 ...
 
-## 4) Power the robot up
+## 5) Power the robot up
 
 ...
 
-## 5) Install the software
+## 6) Install the software
 
 ...
 
-## 6) Run a balancing test
+## 7) Run a balancing test
 
 ...
 
-## 7) Unleash the beast!
+## 8) Unleash the beast!
 
 ...
