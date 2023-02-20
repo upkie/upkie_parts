@@ -2,6 +2,28 @@
 
 Instructions and resource files to build the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped.
 
+## Table of contents
+
+- Bill of materials
+
+## Bill of materials
+
+### 3D printable
+
+...
+
+### Electronics
+
+...
+
+### Mechatronics
+
+...
+
+### Mechanics
+
+...
+
 ## 1) Order parts
 
 Order parts listed in the [bill of materials](BOM.md). It is better to do this first as shipping will take some time.
