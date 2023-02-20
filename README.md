@@ -42,9 +42,15 @@ Print all torso parts from [3d\_printing/torso](3d_printing/torso).
 
 Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow). (Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.)
 
-## 3) Assembly
+## Assembly
 
-### 3.1) Torso
+---
+
+### Step 1: Torso
+
+... [Comments on this step](...).
+
+---
 
 ### 3.1.1) Head plate
 
@@ -56,9 +62,13 @@ Pay extra care to the last point. If the head is mounted the opposite way, you w
 
 - Optionally, 3D print the [handle](3d_printing/extras/handle_v1.3mf) and screw it to the head plate using four M3x8 screws (this can always be done at any later stage).
 
+---
+
 ### 3.1.2) Buttocks plate
 
 - Screw the power dist board to the buttocks plate using four M2 screws
+
+---
 
 ### 3.1.3) Complete the torso
 
@@ -69,13 +79,19 @@ Pay extra care to the last point. If the head is mounted the opposite way, you w
 - Screw the two internal covers using the ten M2.5 screws
 - Plug the battery to the connector, it should make a satisfying click
 
+---
+
 ### 3.2) Left leg
 
 ...
 
+---
+
 ### 3.3) Right leg
 
 ...
+
+---
 
 ### 3.4) Final assembly
 
@@ -96,7 +112,9 @@ Parts:
 3. Connect the left qdd100 to the power dist board using a torso power cable
 4. Connect the right qdd100 to the power dist board using a torso power cable
 
-## 4) Raspberry Pi OS
+---
+
+## Software
 
 ...
 
