@@ -9,7 +9,6 @@
 | hex wrench         | 17 mm RC Hex Wrench         | -             | 1         | 1         | [3D print](https://www.printables.com/model/59120-17mm-rc-hex-wrench/comments/151854) |
 | leg power cable    | female-female power cable   | length: 40 cm | 4         |           | |
 | M2 inserts         | M2x4x3.5 heat set inserts   | M2x4x3.5      | 10        | 0.02      | online retail |
-| raspi heat sink    | Aluminum Heatsink           | for rpi 4b+   | 1         | 5         | online retail |
 | M2 screws          | M2x8 socket head screws     | M2x8          | 10        | 0.02      | online retail |
 | M3 inserts         | M3x4x5 heat set inserts     | M3x4x5        | 20        | 0.02      | online retail |
 | M3 screws          | M3x8 socket head screws     | M3x8          | 50        | 0.02      | online retail |
@@ -18,8 +17,9 @@
 | power dist         | mjbots power dist           | r4.3b+        | 1         | 140       | [mjbots](https://mjbots.com/products/mjbots-power-dist-r4-3b) |
 | qdd100             | mjbots qdd100 servo         | beta 2+       | 4         | 540       | [mjbots](https://mjbots.com/products/qdd100-beta-3) |
 | raspi              | Raspberry Pi 4 Model B      | -             | 1         | 100       | see [raspberrypi.com](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/#find-reseller) |
+| raspi heat sink    | Aluminum Heatsink           | for rpi 4b+   | 1         | 5         | online retail |
 | torso power cable  | male-female power cable     | length: 30 cm | 3         | 2         | |
-| wheel              | RC 1:8 rubber tyre          | see [Wheels](#wheels) | 2 | 7         | online retail |
+| wheel              | RC 1:8 rubber tyre          | see [RC wheels](#rc-wheels) | 2 | 7   | online retail |
 | wheel actuator     | moteus developer kit        | r4.11+        | 2         | 230       | [mjbots](https://mjbots.com/products/moteus-r4-11-developer-kit) |
 | wheel hex coupler  | 17 mm Wheel Hex Coupler     | -             | 2         | 1.5       | online retail |
 
@@ -27,7 +27,7 @@ Summing up unit price estimates multiplied by part quantities, the total price e
 
 ## Specifications
 
-## Wheels
+### RC wheels
 
 * Outer diameter: 112 mm
 * Inner diameter: 83 mm
