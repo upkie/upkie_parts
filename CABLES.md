@@ -19,3 +19,9 @@ See also: [JST PH-3 CAN](https://github.com/mjbots/power_dist/blob/main/docs/ref
 - Wire gauge: 14 or 16 AWG
 
 Power cables between actuators have female-female connectors, while power cables to the power dist board have female-male connectors.
+
+## Tips
+
+### By country
+
+- In France, RS components provides pre-crimped, 24 AWG, JST PH cables with length 300 mm.
