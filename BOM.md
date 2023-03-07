@@ -6,6 +6,7 @@
 
 | Short name         | Part name                   | Requirements  | Quantity  | UPE (USD) | Suppliers     |
 |--------------------|-----------------------------|---------------|-----------|-----------|---------------|
+| dc fan             | DC FAN 24V 1.8W 60x60x15mm  | -             | 1         |           | online retail |
 | hex wrench         | 17 mm RC Hex Wrench         | -             | 1         | 1         | [3D print](https://www.printables.com/model/59120-17mm-rc-hex-wrench/comments/151854) |
 | leg power cable    | female-female power cable   | length: 40 cm | 4         |           | |
 | M2 inserts         | M2x4x3.5 heat set inserts   | M2x4x3.5      | 10        | 0.02      | online retail |
@@ -20,6 +21,7 @@
 | raspi heat sink    | Aluminum Heatsink           | for rpi 4b+   | 1         | 5         | online retail |
 | torso power cable  | male-female power cable     | length: 30 cm | 3         | 2         | |
 | wheel              | RC 1:8 rubber tyre          | see [RC wheels](#rc-wheels) | 2 | 7   | online retail |
+| wheel              | RC 1:8 rubber tyre          | see [Wheels](#wheels) | 2 | 7         | online retail |
 | wheel actuator     | moteus developer kit        | r4.11+        | 2         | 230       | [mjbots](https://mjbots.com/products/moteus-r4-11-developer-kit) |
 | wheel hex coupler  | 17 mm Wheel Hex Coupler     | -             | 2         | 1.5       | online retail |
 
