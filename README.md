@@ -4,7 +4,7 @@ Instructions and resource files to build the [Upkie](https://hackaday.io/project
 
 ## Table of contents
 
-0. [Bill of materials](BOM.md)
+0. [Bill of materials](https://github.com/tasts-robots/build_upkie/wiki/Bill-of-materials)
 1. [Order parts](#1-order-parts)
 2. [3D printing](#2-3d-printing)
 3. [Assembly](#3-assembly)
