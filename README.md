@@ -4,25 +4,15 @@ Instructions and resource files to build the [Upkie](https://hackaday.io/project
 
 ## Table of contents
 
-- Bill of materials
-
-## Bill of materials
-
-### 3D printable
-
-...
-
-### Electronics
-
-...
-
-### Mechatronics
-
-...
-
-### Mechanics
-
-...
+0. [Bill of materials](BOM.md)
+1. [Order parts](#order-parts)
+2. [3D printing](#3d-printing)
+3. [Assembly](#assembly)
+4. [Raspberry Pi setup](#raspberry-pi-setup)
+5. [Power the robot up](#power-the-robot-up)
+6. [Motion control software](#motion-control-software)
+7. [Balancing test](#balancing-test)
+8. [Unleash the beast!](#unleash-the-beast)
 
 ## 1) Order parts
 
