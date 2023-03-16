@@ -1,3 +1,3 @@
 [submodule "wiki"]
 	path = wiki
-	url = https://github.com/tasts-robots/build_upkie.wiki.git
+	url = git@github.com:tasts-robots/build_upkie.wiki.git
