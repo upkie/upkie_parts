@@ -32,11 +32,11 @@ Print all torso parts from [3d\_printing/torso](3d_printing/torso).
 
 Print all leg parts from [3d\_printing/legs/hollow](3d_printing/legs/hollow). (Optionally, if you don't mind hanging cables and prefer a lower print time, you can print [wooden leg](3d_printing/legs/wooden) parts instead.)
 
-## Assembly
+## 3) Assembly
 
 ---
 
-### Step 1: Torso
+### 3.1) Torso
 
 ... [Comments on this step](...).
 
@@ -104,7 +104,7 @@ Parts:
 
 ---
 
-## Software
+## 4) Raspberry Pi setup
 
 ...
 
@@ -112,11 +112,11 @@ Parts:
 
 ...
 
-## 6) Install the software
+## 6) Motion control software
 
 ...
 
-## 7) Run a balancing test
+## 7) Balancing test
 
 ...
 
