@@ -39,3 +39,21 @@ Summing up unit price estimates multiplied by part quantities, the total price e
 Changing the outer diameter is super easy (barely an inconvenience), you will only need to update your agent's configuration. Most agents are robust to cm-wide variations of this diameter.
 
 Changing the inner diameter, wheel drive hex or axle hole diameter will require a corresponding update to the 3D printed [wheel hub](3d_printing/legs/hollow/wheel_hub_v6.3mf). The wheel hub should be a tight fit into the wheel, which usually takes a few iterations to get right. If you select a different wheel drive hex or axle hole diameter, make sure to buy a matching hex coupler.
+
+## Future template
+
+### 3D printable
+
+...
+
+### Electronics
+
+...
+
+### Mechatronics
+
+...
+
+### Mechanics
+
+...
