@@ -1,5 +1,7 @@
 # Build Upkie
 
+[![Discord](https://img.shields.io/discord/1092067184940953690.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/YmDxMSjW)
+
 Instructions and resource files to build the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped.
 
 - 📖 **Instructions:** head over to the [Build Upkie Wiki](https://github.com/tasts-robots/build_upkie/wiki).
