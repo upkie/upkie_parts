@@ -2,7 +2,7 @@
 #
 # Copyright 2022 Stéphane Caron
 #
-# Meant to be run from the host, not from the target (Raspberry Pi).
+# Run this script from the host to configure a target Raspberry Pi system.
 
 set -e
 

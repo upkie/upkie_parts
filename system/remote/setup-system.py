@@ -130,11 +130,6 @@ def install_packages():
     run("apt-get install --yes hostapd dnsmasq")
 
 
-def configure_camera():
-    # run("raspi-config nonint do_camera 0")
-    print("configure_camera(): Not implemented yet")
-
-
 def configure_ssh():
     # run("raspi-config nonint do_ssh 0")
     print("configure_ssh(): Not implemented yet")
@@ -356,7 +351,6 @@ if __name__ == "__main__":
         raise RuntimeError("must be run as root")
 
     install_packages()
-    configure_camera()
     configure_ssh()
     configure_keyboard()
     configure_cpu_isolation()
