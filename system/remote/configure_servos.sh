@@ -52,3 +52,11 @@ echo "conf set servo.default_accel_limit NaN" | sudo moteus_tool --pi3hat-cfg "1
 echo "conf set servo.default_accel_limit NaN" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 4 -c
 echo "conf set servo.default_accel_limit NaN" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 5 -c
 echo "conf set servo.default_accel_limit NaN" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
+
+echo "Writing configuration to persistent storage..."
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 1 -c
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 2 -c
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 3 -c
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 4 -c
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 5 -c
+echo "conf write" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
