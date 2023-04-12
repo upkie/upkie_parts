@@ -32,8 +32,8 @@ echo "conf set servopos.position_min NaN" | sudo moteus_tool --pi3hat-cfg "1=1,2
 echo "conf set servopos.position_min NaN" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
 
 echo "Configuring wheel velocity limits..."
-echo "conf set servo.max_velocity 10.0" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 3 -c
-echo "conf set servo.max_velocity 10.0" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
+echo "conf set servo.max_velocity 8.0" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 3 -c
+echo "conf set servo.max_velocity 8.0" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
 
 # See https://github.com/mjbots/moteus/blob/38d688a933ce1584ee09f2628b5849d5e758ac21/docs/reference.md#servodefault_velocity_limit--servodefault_accel_limit
 echo "Disabling interpolation velocity limits on all joints..."
