@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# Copyright 2022 Stéphane Caron
-
-echo "conf set servopos.position_max NaN" | sudo_moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 3 -c
-echo "conf set servopos.position_max NaN" | sudo_moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
-echo "conf set servopos.position_min NaN" | sudo_moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 3 -c
-echo "conf set servopos.position_min NaN" | sudo_moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t 6 -c
