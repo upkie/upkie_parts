@@ -1,6 +1,6 @@
 # Build Upkie
 
-[![Chat](https://img.shields.io/badge/matrix-joint%20chat-%234eb899)](https://matrix.to/#/#tasts-robots:matrix.org)
+[![Chat](https://img.shields.io/badge/matrix-joint%20chat-%234eb899)](https://app.element.io/#/room/#tasts-robots:matrix.org)
 
 Instructions and resource files to build the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped.
 
