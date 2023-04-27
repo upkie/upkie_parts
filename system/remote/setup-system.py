@@ -29,6 +29,7 @@ The base operating system should already be installed. This script is intended
 to be run as root, like: ``sudo ./setup-system.py``.
 """
 
+import argparse
 import os
 import pathlib
 import shutil
@@ -36,6 +37,42 @@ import subprocess
 import time
 
 ORIG_SUFFIX = time.strftime(".orig-%Y%m%d-%H%M%S")
+
+# Command-line arguments
+# ======================
+
+
+def parse_command_line_arguments() -> argparse.Namespace:
+    """Parse command-line arguments.
+
+    Returns:
+        Namespace resulting from parsing command-line arguments.
+    """
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "ssid",
+        help="SSID of the robot's Wi-Fi network",
+    )
+    parser.add_argument(
+        "wpa_passphrase",
+        help="Password of the robot's Wi-Fi network",
+    )
+    parser.add_argument(
+        "country_code",
+        help="Two-letter country code for Wi-Fi compliance (e.g. FR or UK)",
+    )
+    parser.add_argument(
+        "wlan_prefix",
+        help="IPv4 address prefix (first three bytes) "
+        "for the robot's Wi-Fi network interface (for instance 192.168.0)",
+    )
+    parser.add_argument(
+        "eth_prefix",
+        help="IPv4 address prefix (first three bytes) "
+        "for the robot's wired network interface (for instance 192.168.1)",
+    )
+    return parser.parse_args()
+
 
 # Utility functions
 # =================
@@ -189,16 +226,22 @@ def disable_ntp():
 
 
 def configure_access_point(
-    ssid="Michel Strogoff",
-    wlan_prefix="192.168.0",
-    wpa_passphrase="LivingRoomRoaming",
-    country_code="FR",
-    eth_prefix="192.168.1",
+    ssid,
+    wpa_passphrase,
+    country_code,
+    wlan_prefix,
+    eth_prefix,
 ):
     """Configure the raspi as an access point.
 
     Args:
         ssid: SSID of the Wi-Fi network.
+        wpa_passphrase: Wi-Fi password.
+        country_code: Two-letter country code for compliance.
+        wlan_prefix: IPv4 address prefix (three first bytes) for the robot's
+            Wi-Fi network, e.g. "192.168.0".
+        eth_prefix: IPv4 address prefix (three first bytes) for the robot's
+            wired network, e.g. "192.168.1".
 
     Note:
         The robot's IP suffix on both eth0 and wlan0 interfaces is 42. IP
@@ -338,8 +381,15 @@ if __name__ == "__main__":
     if os.getuid() != 0:
         raise RuntimeError("must be run as root")
 
+    args = parse_command_line_arguments()
     install_packages()
     configure_keyboard()
     configure_cpu_isolation()
     disable_ntp()
-    configure_access_point()
+    configure_access_point(
+        args.ssid,
+        args.wpa_passphrase,
+        args.country_code,
+        args.wlan_prefix,
+        args.eth_prefix,
+    )
