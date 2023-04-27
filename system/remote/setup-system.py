@@ -164,23 +164,6 @@ def install_packages():
     run("apt-get install --yes hostapd dnsmasq")
 
 
-def configure_keyboard():
-    ensure_contents(
-        "/etc/default/keyboard",
-        """# KEYBOARD CONFIGURATION FILE
-
-# Consult the keyboard(5) manual page.
-
-XKBMODEL="pc105"
-XKBLAYOUT="us"
-XKBVARIANT=""
-XKBOPTIONS=""
-
-BACKSPACE="guess"
-""",
-    )
-
-
 def configure_cpu_isolation(filename="/boot/cmdline.txt"):
     """Make sure CPU isolation is configured.
 
@@ -383,7 +366,6 @@ if __name__ == "__main__":
 
     args = parse_command_line_arguments()
     install_packages()
-    configure_keyboard()
     configure_cpu_isolation()
     disable_ntp()
     configure_access_point(
