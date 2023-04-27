@@ -23,8 +23,7 @@
 #     License: Apache-2.0
 
 
-"""
-Set up a Raspberry Pi 4b to run software for Upkie.
+"""Set up a Raspberry Pi 4b to run software for an Upkie wheeled biped.
 
 The base operating system should already be installed. This script is intended
 to be run as root, like: ``sudo ./setup-system.py``.
@@ -48,8 +47,7 @@ def run(*args, **kwargs):
 
 
 def ensure_present(filename, line):
-    """
-    Ensure a given line is present in a named file, and add it if not.
+    """Ensure a given line is present in a named file, and add it if not.
 
     Args:
         filename: Path to file.
@@ -72,13 +70,13 @@ def ensure_present(filename, line):
 
 
 def ensure_contents(filename, contents):
-    """
-    Ensure the given file has exactly the given contents.
+    """Ensure the given file has exactly the given contents.
 
     Args:
         filename: Path to file.
         contents: File contents.
     """
+    print(f"ensure_contents({filename})")
     pathlib.Path(filename).parent.mkdir(parents=True, exist_ok=True)
 
     if os.path.exists(filename):
@@ -94,8 +92,7 @@ def ensure_contents(filename, contents):
 
 
 def set_config_var(name, value):
-    """
-    Set the given variable in /boot/config.txt.
+    """Set the given variable in /boot/config.txt.
 
     Args:
         name: Variable name.
