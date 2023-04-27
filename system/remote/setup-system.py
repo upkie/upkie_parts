@@ -127,11 +127,6 @@ def install_packages():
     run("apt-get install --yes hostapd dnsmasq")
 
 
-def configure_ssh():
-    # run("raspi-config nonint do_ssh 0")
-    print("configure_ssh(): Not implemented yet")
-
-
 def configure_keyboard():
     ensure_contents(
         "/etc/default/keyboard",
@@ -150,8 +145,7 @@ BACKSPACE="guess"
 
 
 def configure_cpu_isolation(filename="/boot/cmdline.txt"):
-    """
-    Make sure CPU isolation is configured.
+    """Make sure CPU isolation is configured.
 
     Args:
         filename: Path to the boot cmdline configuration file.
@@ -190,21 +184,18 @@ def configure_cpu_isolation(filename="/boot/cmdline.txt"):
 
 
 def disable_ntp():
-    """
-    Disable NTP synchronization.
-    """
+    """Disable NTP synchronization."""
     run("timedatectl set-ntp false")
 
 
 def configure_access_point(
-    ssid="Upkie",
+    ssid="Michel Strogoff",
     wlan_prefix="192.168.0",
     wpa_passphrase="LivingRoomRoaming",
     country_code="FR",
     eth_prefix="192.168.1",
 ):
-    """
-    Configure the Pi as an access point.
+    """Configure the raspi as an access point.
 
     Args:
         ssid: SSID of the Wi-Fi network.
@@ -275,7 +266,7 @@ interface eth0
 static ip_address={eth_prefix}.42/24
 static routers={eth_prefix}.1
 
-# Wireless access point configuration for Upkie
+# Wireless access point configuration for the robot
 interface wlan0
 nohook wpa_supplicant
 static ip_address={wlan_prefix}.42/24
@@ -348,7 +339,6 @@ if __name__ == "__main__":
         raise RuntimeError("must be run as root")
 
     install_packages()
-    configure_ssh()
     configure_keyboard()
     configure_cpu_isolation()
     disable_ntp()
