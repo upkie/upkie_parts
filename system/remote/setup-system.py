@@ -161,7 +161,8 @@ def set_config_var(name, value):
 
 
 def install_packages():
-    run("apt-get install --yes hostapd dnsmasq")
+    run("apt-get install --yes hostapd dnsmasq")  # for Wi-FI AP
+    run("apt-get install --yes screen vim")  # convenient later on
 
 
 def configure_cpu_isolation(filename="/boot/cmdline.txt"):
