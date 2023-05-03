@@ -30,6 +30,7 @@ to be run as root, like: ``sudo ./setup-system.py``.
 """
 
 import argparse
+import datetime
 import os
 import pathlib
 import shutil
@@ -37,6 +38,39 @@ import subprocess
 import time
 
 ORIG_SUFFIX = time.strftime(".orig-%Y%m%d-%H%M%S")
+
+# Log each setup step, in case
+# ============================
+
+logging_depth = 0
+
+
+def log_message(message: str, indent: int = 0) -> None:
+    logging_indent = " | " * (logging_depth + indent)
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+    print(f"{now}: {logging_indent}{message}")
+
+
+def log_method(func):
+    """Decorator to log function calls."""
+
+    def wrapped_function(*args, **kwargs):
+        global logging_depth
+        try:
+            logging_depth += 1
+            args_repr = (
+                f'"{args[0]}"' + (", ..." if len(args) > 1 else "")
+                if args
+                else ""
+            )
+            log_message(f"{func.__name__}({args_repr})", indent=-1)
+            result = func(*args, **kwargs)
+            return result
+        finally:
+            logging_depth -= 1
+
+    return wrapped_function
+
 
 # Command-line arguments
 # ======================
@@ -78,11 +112,12 @@ def parse_command_line_arguments() -> argparse.Namespace:
 # =================
 
 
+@log_method
 def run(*args, **kwargs):
-    print("run: " + args[0])
     subprocess.check_call(*args, shell=True, **kwargs)
 
 
+@log_method
 def ensure_present(filename, line):
     """Ensure a given line is present in a named file, and add it if not.
 
@@ -94,18 +129,14 @@ def ensure_present(filename, line):
         x.strip() for x in open(filename, encoding="utf-8").readlines()
     ]
     if line.strip() in current_content:
-        # Yes, the line is already present there
         return
-
     shutil.copy(filename, filename + ORIG_SUFFIX)
-
-    print("ensure_present({}): Adding: {}".format(filename, line))
-
-    # Nope, we need to add it.
+    log_message(f"Adding: {line}")
     with open(filename, "a", encoding="utf-8") as f:
         f.write(line + "\n")
 
 
+@log_method
 def ensure_contents(filename, contents):
     """Ensure the given file has exactly the given contents.
 
@@ -113,7 +144,6 @@ def ensure_contents(filename, contents):
         filename: Path to file.
         contents: File contents.
     """
-    print(f"ensure_contents({filename})")
     pathlib.Path(filename).parent.mkdir(parents=True, exist_ok=True)
 
     if os.path.exists(filename):
@@ -122,12 +152,13 @@ def ensure_contents(filename, contents):
             return
         shutil.copy(filename, filename + ORIG_SUFFIX)
 
-    print("ensure_contents({}): Updating".format(filename))
+    log_message("Updating file content")
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write(contents)
 
 
+@log_method
 def set_config_var(name, value):
     """Set the given variable in /boot/config.txt.
 
@@ -149,22 +180,24 @@ def set_config_var(name, value):
 
     shutil.copy("/boot/config.txt", "/boot/config.txt" + ORIG_SUFFIX)
 
-    print("set_config_var({})={}".format(name, value))
+    log_message("Updating {name} to {value} in /boot/config.txt")
 
     open("/boot/config.txt", "w", encoding="utf-8").write(
         "".join([x for x in new_contents])
     )
 
 
-# Instructions
-# ============
+# Setup steps
+# ===========
 
 
+@log_method
 def install_packages():
     run("apt-get install --yes hostapd dnsmasq")  # for Wi-FI AP
     run("apt-get install --yes screen vim")  # convenient later on
 
 
+@log_method
 def configure_cpu_isolation(filename="/boot/cmdline.txt"):
     """Make sure CPU isolation is configured.
 
@@ -191,10 +224,10 @@ def configure_cpu_isolation(filename="/boot/cmdline.txt"):
         new_items = items + [new_item]
 
     if new_items == items:
-        print("configure_cpu_isolation(): Already configured")
+        log_message("configure_cpu_isolation(): Already configured")
         return
 
-    print(
+    log_message(
         "configure_cpu_isolation(): Adding {}={} to {}".format(
             keyword, value, filename
         )
@@ -204,11 +237,13 @@ def configure_cpu_isolation(filename="/boot/cmdline.txt"):
         f.write(" ".join(new_items) + "\n")
 
 
+@log_method
 def disable_ntp():
     """Disable NTP synchronization."""
     run("timedatectl set-ntp false")
 
 
+@log_method
 def configure_access_point(
     ssid,
     wpa_passphrase,
@@ -232,6 +267,7 @@ def configure_access_point(
         address suffixes on the wireless network are assigned from 100 to 110.
     """
 
+    @log_method
     def configure_interfaces(wlan_prefix, eth_prefix):
         ensure_contents(
             "/etc/network/interfaces",
@@ -301,6 +337,7 @@ static routers={wlan_prefix}.1
 """,
         )
 
+    @log_method
     def configure_hostapd(ssid, wpa_passphrase, country_code):
         ensure_contents(
             "/etc/hostapd/hostapd.conf",
@@ -344,6 +381,7 @@ rsn_pairwise=CCMP
         run("systemctl start hostapd")
         run("systemctl daemon-reload")
 
+    @log_method
     def configure_dnsmasq(wlan_prefix):
         ensure_contents(
             "/etc/dnsmasq.conf",
