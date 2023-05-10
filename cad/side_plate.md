@@ -2,6 +2,11 @@
 
 ## Revisions
 
+### 2023/05/10
+
+- Bring cable guide 1 cm closer to the fan opening
+- Center cable guide
+
 ### 2023/05/05
 
 - Fill unused middle wide opening
