@@ -28,6 +28,15 @@ All notable changes to this project will be documented in this file.
 - 3D printed part: Wooden ankle
 - 3D printed part: Wooden horn
 - 3D printed part: Wooden knee
+- CAD: Handle
+- CAD: Head plate
+- CAD: Hollow ankle
+- CAD: Hollow femur
+- CAD: Hollow horn
+- CAD: Hollow knee
+- CAD: Hollow tibia
+- CAD: Side plate
+- CAD: Wheel hub
 - System: CPU isolation
 - System: Disable network time synchronization
 - System: Install packages
