@@ -194,8 +194,9 @@ def set_config_var(name, value):
 @log_method
 def install_packages():
     run("apt-get install --yes hostapd dnsmasq")  # for Wi-FI AP
-    run("apt-get install --yes python3-pip")  # for moteus
+    run("apt-get install --yes python3-pip")  # for moteus-pi3hat
     run("apt-get install --yes screen vim")  # convenient later on
+    run("pip install moteus-pi3hat")
 
 
 @log_method
