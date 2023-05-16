@@ -8,7 +8,6 @@ import asyncio
 import logging
 import math
 import os
-import sys
 from dataclasses import dataclass
 from typing import Dict, List
 
@@ -198,23 +197,9 @@ def parse_command_line_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def sudo_if_not_root():
-    if os.geteuid() == 0:
-        return
-    new_argv = (
-        ["python", __file__] + sys.argv[1:]
-        if sys.argv[0] == __file__
-        else sys.argv
-    )
-    logging.debug(
-        "This script needs root privilege, re-running with:\n\n"
-        f"    sudo {' '.join(new_argv)}\n"
-    )
-    os.execv("/usr/bin/sudo", new_argv)
-
-
 if __name__ == "__main__":
-    sudo_if_not_root()
+    if os.getuid() != 0:
+        raise RuntimeError("must be run as root")
     args = parse_command_line_arguments()
     servo_tool = ServoTool(args.pi3hat_cfg)
     asyncio.run(main(servo_tool, args.command))
