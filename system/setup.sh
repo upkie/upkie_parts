@@ -12,8 +12,8 @@ then
     exit
 fi
 
-SCRIPT_DIR=$(dirname $0)
+CURDIR=$(dirname $0)
 UPKIE=${1}  # [user@]hostname of target platform
 
-scp ${SCRIPT_DIR}/remote/setup-system.py ${UPKIE}:setup-system.py
-ssh ${UPKIE} sudo ./setup-system.py
+scp ${CURDIR}/scripts ${UPKIE}:scripts
+ssh ${UPKIE} sudo ./scripts/setup-system.py
