@@ -8,5 +8,5 @@ for ((i=1; i<=6; i++)); do
     sudo moteus_tool --pi3hat-cfg "${PI3HAT_CFG}" --zero-offset -t $i
 done
 
-servo_tool --pi3hat-cfg "${PI3HAT_CFG}" stats
+sudo upkie_tool stats
 touch /tmp/rezero_success

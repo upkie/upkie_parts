@@ -1,9 +1,0 @@
-#!/bin/zsh
-#
-# Copyright 2022 Stéphane Caron
-
-PI3HAT_CFG="1=1,2,3;2=4,5,6"
-
-servo_tool --pi3hat-cfg "${PI3HAT_CFG}" rezero
-servo_tool --pi3hat-cfg "${PI3HAT_CFG}" stats
-touch /tmp/rezero_success

@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright 2022 Stéphane Caron
+# Copyright 2023 Inria
 
 import argparse
 import asyncio
-import logging
 import math
 import os
 from dataclasses import dataclass
 from typing import Dict, List
+from pathlib import Path
 
 import moteus
 import moteus_pi3hat
@@ -23,7 +24,7 @@ class Servo:
     bus: int
 
 
-class ServoTool:
+class UpkieTool:
 
     """
     Interface to send the same command to all servos in a given layout.
@@ -36,14 +37,9 @@ class ServoTool:
     transport: moteus_pi3hat.Pi3HatRouter
     controllers: List[moteus.Controller]
 
-    def __init__(self, pi3hat_cfg: str):
-        """
-        Initialize servo tool.
-
-        Args:
-            pi3hat_cfg: pi3hat layout string.
-        """
-        servos = self.__get_servos(pi3hat_cfg)
+    def __init__(self):
+        """Initialize servo tool."""
+        servos = self.__get_servos()
         servo_bus_map = self.__get_servo_bus_map(servos)
         transport = moteus_pi3hat.Pi3HatRouter(servo_bus_map=servo_bus_map)
         controllers = [
@@ -53,28 +49,21 @@ class ServoTool:
         self.controllers = controllers
         self.transport = transport
 
-    def __get_servos(self, pi3hat_cfg: str) -> List[Servo]:
+    def __get_servos(self) -> List[Servo]:
         """
         Get list of servos from a pi3hat config string.
-
-        Args:
-            pi3hat_cfg: configuration string.
 
         Returns:
             List of servos.
         """
         servos = []
+        pi3hat_cfg = "1=1,2,3;2=4,5,6"
         buses = filter(None, pi3hat_cfg.split(";"))
         for bus in buses:
             bus_id, servo_cfg = bus.split("=")
             bus_servos = filter(None, servo_cfg.split(","))
             for servo in bus_servos:
                 servo_id = int(servo)
-                if servo_id > 30:
-                    logging.warn(
-                        f"Servo ID {servo_id} is > 30, "
-                        "is the power_dist board included in --pi3hat-cfg?"
-                    )
                 servos.append(Servo(id=servo_id, bus=int(bus_id)))
         return servos
 
@@ -154,25 +143,27 @@ class ServoTool:
             )
 
 
-async def main(servo_tool: ServoTool, command: str) -> None:
+async def main(upkie_tool: UpkieTool, command: str) -> None:
     """
     Query controllers then make sure they are stopped. Clears any fault.
 
     Args:
-        servo_tool: Instance of the ServoTool class.
+        upkie_tool: Instance of the UpkieTool class.
         command: Command keyword.
     """
-    await servo_tool.set_stop()
+    await upkie_tool.set_stop()
     try:
         if command == "rezero":
-            await servo_tool.set_rezero()
+            await upkie_tool.set_rezero()
+            await upkie_tool.print_stats()
+            Path('/tmp/rezero_success').touch()
         if command == "stats":
-            await servo_tool.print_stats()
+            await upkie_tool.print_stats()
         if command == "stop":
-            await servo_tool.set_stop()
+            await upkie_tool.set_stop()
     except Exception as e:
         print(f"Ignoring exception: {e}")
-    await servo_tool.set_stop()
+    await upkie_tool.set_stop()
 
 
 def parse_command_line_arguments() -> argparse.Namespace:
@@ -183,12 +174,6 @@ def parse_command_line_arguments() -> argparse.Namespace:
         Namespace resulting from parsing command-line arguments.
     """
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--pi3hat-cfg",
-        help="servo layout, same syntax as moteus_tool's --pi3hat-cfg",
-        required=True,
-        type=str,
-    )
     parser.add_argument(
         "command",
         help="Command to execute",
@@ -201,5 +186,5 @@ if __name__ == "__main__":
     if os.getuid() != 0:
         raise RuntimeError("must be run as root")
     args = parse_command_line_arguments()
-    servo_tool = ServoTool(args.pi3hat_cfg)
-    asyncio.run(main(servo_tool, args.command))
+    upkie_tool = UpkieTool()
+    asyncio.run(main(upkie_tool, args.command))
