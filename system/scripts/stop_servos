@@ -2,10 +2,9 @@
 #
 # Copyright 2022 Stéphane Caron
 
-PI3HAT_CFG="1=1,2,3;2=4,5,6"
-
 for ((i=1; i<=6; i++)); do
-	echo "d stop" | sudo moteus_tool --pi3hat-cfg "${PI3HAT_CFG}" -t $i -c
+    echo "Stopping servo ${i}..."
+    echo "d stop" | sudo moteus_tool --pi3hat-cfg "1=1,2,3;2=4,5,6" -t $i -c
 done
 
 sudo upkie_tool stats
