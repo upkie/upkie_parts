@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- STL files for all parts, along with 3MF project files
+
 ## [0.1.0] - 2023/05/12
 
 ### Added
