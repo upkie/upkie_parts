@@ -6,7 +6,17 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CAD: Bottom plate
 - STL files for all parts, along with 3MF project files
+
+### Changed
+
+- Bottom plate upgrade
+- Hollow legs become the default
+
+### Fixed
+
+- Name of stiffener and back cover files relative to top and bottom
 
 ## [0.1.0] - 2023/05/12
 
