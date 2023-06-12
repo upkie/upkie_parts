@@ -6,14 +6,19 @@
 
 set -e
 
-if [ $# -ne 1 ]
+if [ $# -ne 6 ]
 then
-    echo "Usage: $0 <[user@]host>"
+    echo "Usage: $0 <[user@]host> <ssid> <wifi-password> <country> <wifi-prefix> <eth-prefix>"
     exit
 fi
 
 CURDIR=$(dirname $0)
 UPKIE=${1}  # [user@]hostname of target platform
+SSID=${2}
+WIFI_PASSWORD=${3}
+COUNTRY=${4}
+WIFI_PREFIX=${5}
+ETH_PREFIX=${6}
 
-scp ${CURDIR}/scripts ${UPKIE}:scripts
-ssh ${UPKIE} sudo ./scripts/setup-system.py
+scp -r ${CURDIR}/scripts ${UPKIE}:scripts
+ssh ${UPKIE} sudo ./scripts/setup-system.py ${SSID} ${WIFI_PASSWORD} ${COUNTRY} ${WIFI_PREFIX} ${ETH_PREFIX}
