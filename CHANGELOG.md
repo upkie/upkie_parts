@@ -6,7 +6,9 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CAD: Ankle in FreeCAD (thanks to @christophebraillon)
 - CAD: Bottom plate
+- CAD: Tibia in FreeCAD (thanks to @standesalpes)
 - STL files for all parts, along with 3MF project files
 
 ### Changed
@@ -52,7 +54,7 @@ All notable changes to this project will be documented in this file.
 - CAD: Hollow knee
 - CAD: Hollow tibia
 - CAD: Side plate
-- CAD: Wheel hub
+- CAD: Wheel hub (thanks to @EtienneAr)
 - System: CPU isolation
 - System: Disable network time synchronization
 - System: Install packages
