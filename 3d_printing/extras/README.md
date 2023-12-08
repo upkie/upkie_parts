@@ -7,3 +7,7 @@ Provisional connector to attach a [60x60x25 mm, 24 V DC fan](https://www.amazon.
 ## Handle
 
 Regular handle to grab the robot and move it around.
+
+## Switch support
+
+Small support to screw on the side of the robot to hold the on/off power switch and make it easy to access.
