@@ -1,9 +1,9 @@
 # 3D printed parts for Upkie
 
-This repository provides [3D printing](https://github.com/tasts-robots/upkie_parts/tree/main/3d_printing) (3MF and STL files), [CAD files](https://github.com/tasts-robots/upkie_parts/tree/main/cad) (Blender, FreeCAD) and Markdown files to keep track of part history.
+This repository provides [3D printing](https://github.com/upkie/upkie_parts/tree/main/3d_printing) (3MF and STL files), [CAD files](https://github.com/upkie/upkie_parts/tree/main/cad) (Blender, FreeCAD) and Markdown files to keep track of part history.
 
 > [!NOTE]\
-> We maintain parts in this separate repository because their full revision history is quite memory-consuming. Only part designers should have to clone this repository; most users will only clone the main [upkie](https://github.com/tasts-robots/upkie) repository.
+> We maintain parts in this separate repository because their full revision history is quite memory-consuming. Only part designers should have to clone this repository; most users will only clone the main [upkie](https://github.com/upkie/upkie) repository.
 
 
 ## Add-ons
@@ -19,5 +19,5 @@ A small part to hold the on-off switch, and have it easy to access on the side o
 
 ## See also
 
-- [Build instructions](https://github.com/tasts-robots/upkie/wiki): printing and assembling a new Upkie
-- [Discussions](https://github.com/tasts-robots/upkie/discussions) around hardware and software
+- [Build instructions](https://github.com/upkie/upkie/wiki): printing and assembling a new Upkie
+- [Discussions](https://github.com/upkie/upkie/discussions) around hardware and software
