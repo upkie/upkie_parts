@@ -17,6 +17,11 @@ A small part to hold the on-off switch, and have it easy to access on the side o
 * [STL file](3d_printing/extras/Switch_Support.stl)
 * [FreeCAD file](cad/extras/switch_support.FCStd)
 
+## On Hackaday.io
+
+- [`upkie.blend`](https://cdn.hackaday.io/files/1857297946229536/upkie-blender.zip): Blender project of the fully assembled robot
+- [`upkie.stl`](https://cdn.hackaday.io/files/1857297946229536/upkie-stl.zip): STL model of the fully assembled robot
+
 ## See also
 
 - [Build instructions](https://github.com/upkie/upkie/wiki): printing and assembling a new Upkie
