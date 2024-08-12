@@ -20,16 +20,21 @@ Assembly files are also available on Hackaday.io:
 
 Provisional connector to attach a [60x60x25 mm, 24 V DC fan](https://www.amazon.fr/Ventilateur-60x60x25mm-22dBA-Sunon-MF60252V21000UA99/dp/B07ZBSBP33/) to Upkie's head. Helps avoid thermal throttling when the robot actively balances for more than one hour.
 
+* [STL file](add-ons/earflap/earflap.stl)
+
 ### Handle
 
 Regular handle to grab the robot and move it around.
+
+* [STL file](add-ons/handle/handle.stl)
+* [Blender project](add-ons/handle/handle.blend)
 
 ### Switch support
 
 A small part to hold the on-off switch, and have it easy to access on the side of the robot.
 
-* [STL file](3d_printing/extras/Switch_Support.stl)
-* [FreeCAD file](cad/extras/switch_support.FCStd)
+* [STL file](add-ons/switch_support/switch_support.stl)
+* [FreeCAD file](add-ons/switch_support/switch_support.FCStd)
 
 ## See also
 
