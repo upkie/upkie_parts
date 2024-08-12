@@ -5,7 +5,6 @@ This repository provides [3D printing](https://github.com/upkie/upkie_parts/tree
 > [!NOTE]\
 > We maintain parts in this separate repository because their full revision history is quite memory-consuming. Only part designers should have to clone this repository; most users will only clone the main [upkie](https://github.com/upkie/upkie) repository.
 
-
 ## Add-ons
 
 <img align="right" src="https://github.com/upkie/upkie_parts/assets/1189580/0c6855b4-e5e8-41a2-86e3-0561b63a771f" height="150">
