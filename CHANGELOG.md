@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2023/07/07
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+
+- add-ons: Camera support
+- add-ons: Switch support
+
+### Changed
+
+- Reorganize directories by part
+
+## [1.0.0] - 2023-07-07
 
 ### Added
 
@@ -20,7 +34,7 @@ All notable changes to this project will be documented in this file.
 
 - Name of stiffener and back cover files relative to top and bottom
 
-## [0.1.0] - 2023/05/12
+## [0.1.0] - 2023-05-12
 
 ### Added
 
@@ -60,3 +74,7 @@ All notable changes to this project will be documented in this file.
 - System: Install packages
 - System: Keyboard configuration
 - System: Wireless access point configuration
+
+[unreleased]: https://github.com/upkie/parts/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/upkie/parts/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/upkie/parts/releases/tag/v0.1.0
