@@ -14,8 +14,6 @@ Assembly files are also available on Hackaday.io:
 
 ## Add-ons
 
-<img align="right" src="https://github.com/upkie/upkie_parts/assets/1189580/0c6855b4-e5e8-41a2-86e3-0561b63a771f" height="150">
-
 ### Earflap
 
 Provisional connector to attach a [60x60x25 mm, 24 V DC fan](https://www.amazon.fr/Ventilateur-60x60x25mm-22dBA-Sunon-MF60252V21000UA99/dp/B07ZBSBP33/) to Upkie's head. Helps avoid thermal throttling when the robot actively balances for more than one hour.
@@ -28,6 +26,8 @@ Regular handle to grab the robot and move it around.
 
 * [STL file](add-ons/handle/handle.stl)
 * [Blender project](add-ons/handle/handle.blend)
+
+<img align="right" src="https://github.com/upkie/upkie_parts/assets/1189580/0c6855b4-e5e8-41a2-86e3-0561b63a771f" height="150">
 
 ### Switch support
 
