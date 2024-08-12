@@ -4,6 +4,10 @@ Support for an OAK-D Lite camera.
 
 ## Revisions
 
+### 2024-08-12
+
+- Correct top-face hole diameters to 4.85 mm (rather than 5 mm)
+
 ### 2023-04-18
 
 - Enlarge USB cable gutter to 15 mm (rather than 10 mm)
