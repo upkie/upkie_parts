@@ -11,10 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - add-ons: Camera support
 - add-ons: Switch support
+- CAD: Horn in FreeCAD
 
 ### Changed
 
 - Reorganize directories by part
+- Adding M4 holes to the horn
 
 ## [1.0.0] - 2023-07-07
 
