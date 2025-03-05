@@ -8,8 +8,8 @@ We maintain this separate repository because the full revision history of hardwa
 
 Assembly files are also available to check out the overall robot:
 
-- [`upkie.blend`](https://cdn.hackaday.io/files/1857297946229536/upkie-blender.zip): Blender project
-- [`upkie.stl`](https://cdn.hackaday.io/files/1857297946229536/upkie-stl.zip): STL model
+- [`upkie.blend`](upkie.blend): Blender project
+- [`upkie.stl`](upkie.stl): STL model
 
 ## Getting started
 
