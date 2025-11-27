@@ -45,6 +45,12 @@ A small part to hold the on-off switch, and have it easy to access on the side o
 * [STL file](add-ons/switch_support/switch_support.stl)
 * [FreeCAD file](add-ons/switch_support/switch_support.FCStd)
 
+## Known issues
+
+Here are some known areas of improvement of this hardware design:
+
+- [Ankle screw hole are slightly misaligned #21](https://github.com/upkie/upkie_parts/issues/21)
+
 ## See also
 
 - [Build instructions](https://github.com/upkie/upkie/wiki): printing and assembling a new Upkie
