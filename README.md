@@ -31,13 +31,6 @@ Regular handle to grab the robot and move it around.
 
 <img align="right" src="https://github.com/upkie/upkie_parts/assets/1189580/0c6855b4-e5e8-41a2-86e3-0561b63a771f" height="150">
 
-### Switch support
-
-A small part to hold the on-off switch, and have it easy to access on the side of the robot.
-
-* [STL file](add-ons/switch_support/switch_support.stl)
-* [FreeCAD file](add-ons/switch_support/switch_support.FCStd)
-
 ## Known issues
 
 Here are some known areas of improvement of this hardware design:
