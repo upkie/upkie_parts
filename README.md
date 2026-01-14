@@ -31,12 +31,6 @@ Regular handle to grab the robot and move it around.
 
 <img align="right" src="https://github.com/upkie/upkie_parts/assets/1189580/0c6855b4-e5e8-41a2-86e3-0561b63a771f" height="150">
 
-## Known issues
-
-Here are some known areas of improvement of this hardware design:
-
-- [Ankle screw hole are slightly misaligned #21](https://github.com/upkie/upkie_parts/issues/21)
-
 ## See also
 
 - [Build instructions](https://github.com/upkie/upkie/wiki): printing and assembling a new Upkie
