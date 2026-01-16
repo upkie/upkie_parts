@@ -14,6 +14,14 @@ sudo apt install git-lfs
 
 If you cloned this repository with Git LFS installed, all files will be in your working directory. If you cloned the repository without Git LFS, you can pull large files by `git lfs pull`.
 
+## Torso
+
+- **Case** ([FreeCAD](torso/case/case.FCStd) | [STL](torso/case/case.stl)): Main torso enclosure.
+- **Battery shore plug** ([STL](torso/battery_shore_plug/battery_shore_plug.stl)): Plug where two leaf springs can be connected to the battery via an XT90-S cable.
+- **Battery stud** ([STL top](torso/battery_stud/battery_stud_top.stl) | [STL bottom](torso/battery_stud/battery_stud_bottom.stl)): Two-part hold for securing the battery inside the Upkie.
+- **Raspberry Pi support** ([FreeCAD](torso/raspberry_support/raspberry_support.FCStd) | [STL](torso/raspberry_support/Raspberry_support.stl)): Mounting bracket for the Raspberry Pi.
+- **Power dist board support** ([FreeCAD](torso/powerboard_support/powerboard_support.FCStd) | [STL](torso/powerboard_support/Powerboard_support.stl)): Mounting bracket for the power distribution board.
+
 ## Legs
 
 - **Hip support** ([FreeCAD](legs/hip_support/hip_support.FCStd) | [STL](legs/hip_support/hip_support.stl)): Optional 3D printed part with a bearing to reduce play and "protect" knee actuators from radial load.
@@ -24,14 +32,6 @@ If you cloned this repository with Git LFS installed, all files will be in your 
 - **Lower leg** ([FreeCAD](legs/lower_leg/lower_leg.FCStd) | [STL](legs/lower_leg/lower_leg.stl)): Lower segment connecting to the wheel hub.
 - **Wheel hub** ([FreeCAD](legs/wheel_hub/wheel_hub.FCStd) | [STL](legs/wheel_hub/wheel_hub.stl)): Integrated wheel and hub assembly for mounting tires.
     - There is also a [hex variant](legs/wheel_hub/hex_variant/) for 17 mm wheel hex driver RC cars. It is easier to adapt to various RC wheels, but more brittle.
-
-## Torso
-
-- **Case** ([FreeCAD](torso/case/case.FCStd) | [STL](torso/case/case.stl)): Main torso enclosure.
-- **Battery shore plug** ([STL](torso/battery_shore_plug/battery_shore_plug.stl)): Plug where two leaf springs can be connected to the battery via an XT90-S cable.
-- **Battery stud** ([STL top](torso/battery_stud/battery_stud_top.stl) | [STL bottom](torso/battery_stud/battery_stud_bottom.stl)): Two-part hold for securing the battery inside the Upkie.
-- **Raspberry Pi support** ([FreeCAD](torso/raspberry_support/raspberry_support.FCStd) | [STL](torso/raspberry_support/Raspberry_support.stl)): Mounting bracket for the Raspberry Pi.
-- **Power dist board support** ([FreeCAD](torso/powerboard_support/powerboard_support.FCStd) | [STL](torso/powerboard_support/Powerboard_support.stl)): Mounting bracket for the power distribution board.
 
 ## Add-ons
 
