@@ -19,7 +19,7 @@ If you cloned this repository with Git LFS installed, all files will be in your 
 - **Case** ([FreeCAD](torso/case/case.FCStd) | [STL](torso/case/case.stl)): Main torso enclosure.
 - **Battery shore plug** ([STL](torso/battery_shore_plug/battery_shore_plug.stl)): Plug where two leaf springs can be connected to the battery via an XT90-S cable.
 - **Battery stud** ([STL top](torso/battery_stud/battery_stud_top.stl) | [STL bottom](torso/battery_stud/battery_stud_bottom.stl)): Two-part hold for securing the battery inside the Upkie.
-- **Raspberry Pi support** ([FreeCAD](torso/raspberry_support/raspberry_support.FCStd) | [STL](torso/raspberry_support/Raspberry_support.stl)): Mounting bracket for the Raspberry Pi.
+- **Raspberry Pi support** ([FreeCAD](torso/raspberry_support/raspberry_support.FCStd) | [STL](torso/raspberry_support/raspberry_support.stl)): Mounting bracket for the Raspberry Pi.
 - **Power dist board support** ([FreeCAD](torso/powerboard_support/powerboard_support.FCStd) | [STL](torso/powerboard_support/Powerboard_support.stl)): Mounting bracket for the power distribution board.
 
 ## Legs
